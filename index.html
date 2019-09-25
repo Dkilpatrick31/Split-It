@@ -10,26 +10,43 @@
     <title>Split It</title>
   </head>
   <body>
-    <header>
-      <h1>Split It</h1>
-    </header>
-    <main>
-      <div class="inputs">
-        <input id="myInput" type="text" value="">
-        <input type="text">
-      </div>
-      <button id="myButton">Click to Add</button>
-      <button id="resetButton">Reset</button>
-      <ul>
-      </ul>
-    </main>
-    <footer>
-      <h4>&copy; Dane Kilpatrick 2019</h4>
-      <ul class="socialLinks">
-        <li><a href = "www.DaneKilpatrick.com">Portfolio</a></li>
-        <li><a href = "https://github.com/Dkilpatrick31">Github</a></li>
-      </ul>
-    </footer>
+    <div class="global-wrapper">
+      <header>
+        <h1>Split It</h1>
+      </header>
+      <main>
+        <div class="inputs">
+          <div class="card01 card">
+            <button class="add" id="addItemLeftSide" type="button" name="button">+</button>
+            <input id="myInput" type="text" placeholder="How much you owe">
+            <button id="resetButtonLeftSide" type="button" name="button">Reset</button>
+            <button id="removeButtonLeftSide" class="" type="button" name="button">Remove</button>
+            <ul class="leftSideUL">
+            </ul>
+
+          </div>
+          <div class="card02 card">
+            <button class="add" id="addItemRightSide" type="button" name="button">+</button>
+            <input id="ourInput" type="text" placeholder="How much y'all split">
+            <button id="resetButtonRightSide" type="button" name="button">Reset</button>
+            <button id="removeButtonRightSide" type="button" name="button">Remove</button>
+            <ul class="rightSideUL">
+            <button type="button" id="calculateButton" name="button">Cut in Half</button>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <section>
+        <button type="button" id="combineButton" name="button">Combine</button>
+      </section>
+      <footer>
+        <h4>&copy; Dane Kilpatrick 2019</h4>
+        <ul class="socialLinks">
+          <li><a href = "www.DaneKilpatrick.com">Portfolio</a></li>
+          <li><a href = "https://github.com/Dkilpatrick31">Github</a></li>
+        </ul>
+      </footer>
+    </div>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
